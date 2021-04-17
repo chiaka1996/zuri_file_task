@@ -8,7 +8,6 @@ fetch(url)
 .then((data) => {
     fs.writeFile('result/posts.json',JSON.stringify(data,null, 2), function (err) {
         if (err) throw err;
-        console.log('Updated!');
       });
 })
 .catch(error => console.log(error));
